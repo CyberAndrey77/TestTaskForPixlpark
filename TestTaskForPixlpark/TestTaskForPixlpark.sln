@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskForPixlpark", "TestTaskForPixlpark\TestTaskForPixlpark.csproj", "{3D4AC80C-9F64-4754-8CE3-207B03A4645B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D4AC80C-9F64-4754-8CE3-207B03A4645B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4AC80C-9F64-4754-8CE3-207B03A4645B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4AC80C-9F64-4754-8CE3-207B03A4645B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4AC80C-9F64-4754-8CE3-207B03A4645B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E01EDFA7-D03F-49C3-A901-78EEFF0E80B9}
+	EndGlobalSection
+EndGlobal

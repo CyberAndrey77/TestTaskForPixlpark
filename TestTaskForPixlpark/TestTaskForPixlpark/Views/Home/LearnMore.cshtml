@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "LearnMore";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Подробнее</title>
+</head>
+<body>
+    <h3>Заказ @ViewBag.Order.Title</h3>
+
+    <table  class="table">
+        <tr>
+            <th colspan="2">Стоимость</th>
+        </tr>
+        <tr>
+            <td>Цена</td>
+            <td>@ViewBag.Order.Price</td>
+        </tr>
+        <tr>
+            <td>Название скидки</td>
+            <td>@ViewBag.Order.DiscountPrice</td>
+        </tr>
+        <tr>
+            <td>Стоимость доставки</td>
+            <td>@ViewBag.Order.DeliveryPrice</td>
+        </tr>
+        <tr>
+            <td>Итого</td>
+            <td>@ViewBag.Order.TotalPrice</td>
+        </tr>
+        <tr>
+            <td>Статус платежа</td>
+            <td>@ViewBag.Order.PaymentStatus</td>
+        </tr>
+    </table>
+    <br />
+    <table  class="table">
+        <tr>
+            <th colspan="2">Адрес доставки</th>
+        </tr>
+        <tr>
+            <td>Почтовый индекс</td>
+            <td>@ViewBag.Order.DeliveryAddress.ZipCode</td>
+        </tr>
+        <tr>
+            <td>Адрес 1</td>
+            <td>@ViewBag.Order.DeliveryAddress.AddressLine1</td>
+        </tr>
+        <tr>
+            <td>Адрес 2</td>
+            <td>@ViewBag.Order.DeliveryAddress.AddressLine2</td>
+        </tr>
+        <tr>
+            <td>Описание</td>
+            <td>@ViewBag.Order.DeliveryAddress.Description</td>
+        </tr>
+        <tr>
+            <td>Город</td>
+            <td>@ViewBag.Order.DeliveryAddress.City</td>
+        </tr>
+        <tr>
+            <td>Страна</td>
+            <td>@ViewBag.Order.DeliveryAddress.Country</td>
+        </tr>
+        <tr>
+            <td>Регион</td>
+            <td>@ViewBag.Order.DeliveryAddress.State</td>
+        </tr>
+        <tr>
+            <td>Полное имя</td>
+            <td>@ViewBag.Order.DeliveryAddress.FullName</td>
+        </tr>
+        <tr>
+            <td>Телефон</td>
+            <td>@ViewBag.Order.DeliveryAddress.Phone</td>
+        </tr>
+    </table>
+    <br />
+    <table  class="table">
+        <tr>
+            <th colspan="2">Доставка</th>
+        </tr>
+        <tr>
+            <td>Название</td>
+            <td>@ViewBag.Order.Shipping.Title</td>
+        </tr>
+        <tr>
+            <td>Телефон</td>
+            <td>@ViewBag.Order.Shipping.Phone</td>
+        </tr>
+        <tr>
+            <td>Электронная почта</td>
+            <td>@ViewBag.Order.Shipping.Email</td>
+        </tr>
+    </table>
+</body>
+</html>
+

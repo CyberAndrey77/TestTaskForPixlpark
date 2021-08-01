@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Main Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Магазин</title>
+</head>
+<body>
+    <div>
+        <h3>Каталог</h3>
+        <table class="table">
+            <tr>
+                <th><p>Название</p></th>
+                <th><p>Цена</p></th>
+                <th><p>Узнать подробнее</p></th>
+            </tr>
+            @foreach (var order in ViewBag.Orders)
+            {
+                <tr>
+                    <td><p>@order.Title</p></td>
+                    <td><p>@order.TotalPrice</p></td>
+                    <td><p><a href="/Home/LearnMore/@order.Id">Подробнее</a></p></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
